@@ -1,0 +1,165 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/Main\ Background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #e35869;
+}
+
+
+main .box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 7px;
+  min-height: fit-content;
+  min-width: 650px;
+  border: 2px solid rgba(46, 17, 45, 0.5);
+}
+
+@media (max-width: 767px) {
+  main .box {
+    min-width: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  main .box {
+    min-width: 250px;
+  }
+}
+
+main .box h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+main .box .form .input {
+  display: block;
+  margin-bottom: 2rem;
+  width: 95%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #818181;
+  display: inline;
+  outline: none;
+  padding: 1rem .3rem;
+  font-size: 1.1rem;
+}
+
+main .box .form .input:focus {
+  border-bottom: 1px solid #ff5b14;
+}
+
+main .box .form .input::placeholder {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+main .box .form i {
+  margin-right: 10px;
+  color: #ff5b14;
+}
+
+main .box h2 {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 400;
+  font-size: 1.2rem;
+  width: 16rem;
+  color: #818181;
+  text-transform: uppercase;
+  transition: .2s;
+  margin-bottom: .5rem;
+}
+
+main .box h2:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.815);
+}
+
+main .box .buttons {
+  display: flex;
+  flex-direction: column;
+  bottom: -24px;
+  position: relative;
+}
+
+main .box .buttons button.sign-in {
+  position: relative;
+  right: 2rem;
+  width: calc(100% + 4rem);
+  height: 3rem;
+  border: none;
+  background-color: #2e112d;
+  color: white;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+main .box .buttons button.register {
+  position: relative;
+  right: 2rem;
+  width: calc(100% + 4rem);
+  height: 3rem;
+  border: none;
+  background-color: #e8e9ec;
+  color: #7d7a7a;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+main .box .buttons button {
+  transition: .2s;
+}
+
+
+main .box .buttons button.register:hover,
+main .box .buttons button.sign-in:hover {
+  cursor: pointer;
+  background-color: #ff804a;
+  color: white;
+}
+
+footer {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer p i {
+  color: #ff5b14;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #2e112d;
+}
