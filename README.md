@@ -1,4 +1,4 @@
-### Hello, This Is Live site: https://abdoali248.github.io/Huddle-landing-page-with-single-introductory-section.io/https://abdoali248.github.io/Login-Page.github.io/
+### Hello, This Is Live site:
 
 # Hello, There 👋🏻
 ## This is my `login page` designed and made by **me**
